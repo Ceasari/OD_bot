@@ -3,18 +3,17 @@ from aiogram import types
 from keyboards.keyboards import rate_kb
 from aiogram.types import ContentType
 import os.path
-from config import ALLOWED_FORMATS
+from config import ALLOWED_FORMATS, MODEL_PATH
 import cv2
 from ultralytics import YOLO
 import random
 import string
 import glob
 
-model = YOLO('Model/yolo8XXXXX.pt')
+model = YOLO(MODEL_PATH)
 
 os.makedirs("Temp", exist_ok=True)
 os.makedirs("Processed", exist_ok=True)
-
 
 def generate_random_idx(length=8):
     letters_and_digits = string.ascii_letters + string.digits
