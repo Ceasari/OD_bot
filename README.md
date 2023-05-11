@@ -33,7 +33,7 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
     
     * YOLOv8_l trained based on large model of YOLOv8l
       
-    * YOLOv8_x trained based on large model of YOLOv8x
+    * YOLOv8_x trained based on extra large model of YOLOv8x
 
 4. Save the downloaded model to the [Model](Model)
    
