@@ -26,7 +26,7 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
 3. Download the pre-trained model [link](https://drive.google.com/drive/folders/17ha83DuhPzufn5oN54mMY3WVq3UW3u47?usp=sharing) 
 
 
-    There are two pre-trained model: 
+    There are two pre-trained models: 
       
     * YOLOv8_l trained based on large model of YOLOv8l
       
