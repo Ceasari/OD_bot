@@ -49,7 +49,7 @@ To install the required dependencies, run the following command:
 1. Clone the repository:
 
     ```
-    git clone https://github.com/your-username/handwritten-digits-recognition-bot.git
+    git clone [https://github.com/your-username/handwritten-digits-recognition-bot.git](https://github.com/Ceasari/OD_bot/)
     cd handwritten-digits-recognition-bot
     ```
 
@@ -59,7 +59,7 @@ To install the required dependencies, run the following command:
     pip install -r requirements.txt
     ```
 
-3. Rename `config.py.example` to `config.py` and update the values:
+3. Insert telegram API key `config.py`:
 
     ```
     cp config.py.example config.py
