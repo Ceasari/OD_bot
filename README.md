@@ -32,7 +32,7 @@ There are two pre-trained model:
       
 * YOLOv8_x trained based on large model of YOLOv8x
 
-4. Save the downloaded model to the `Model/'
+4. Save the downloaded model to the [Model](Model)
    
 5. Insert telegram API key and path to downloaded model to `config.py`
 
