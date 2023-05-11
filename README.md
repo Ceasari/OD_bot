@@ -1,8 +1,7 @@
-Handwritten Digit Recognizer Telegram Bot
-This is a Telegram bot that recognizes handwritten digits from an image sent to it and returns the original image with bounding boxes and labels around each detected digit.
 
-Installation
-To install the required dependencies, run the following command:
+
+
+
 
 Copy code
 pip install -r requirements.txt
@@ -22,7 +21,10 @@ Here is an example of the bot recognizing and labeling handwritten digits in an 
 
 # Handwritten Digits Recognition Telegram Bot
 
-This Telegram bot can receive an image with handwritten digits and return the original image with bounding boxes and labels of each detected digit.
+This is a Telegram bot that recognizes handwritten digits from an image sent to it and returns the original image with bounding boxes and labels around each detected digit.
+
+## Installation
+To install the required dependencies, run the following command:
 
 ## Usage
 
