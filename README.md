@@ -18,3 +18,58 @@ To use the bot, send an image of a handwritten digit to the bot in a chat and wa
 
 Example
 Here is an example of the bot recognizing and labeling handwritten digits in an image:
+
+
+# Handwritten Digits Recognition Telegram Bot
+
+This Telegram bot can receive an image with handwritten digits and return the original image with bounding boxes and labels of each detected digit.
+
+## Usage
+
+1. Start a chat with the bot by searching for `@HandwrittenDigitsRecognitionBot`.
+2. Send the bot a photo with handwritten digits.
+3. Wait for the bot to process the image and return the original image with bounding boxes and labels of each detected digit.
+
+## Example
+
+![Example image with handwritten digits and corresponding output](example.png)
+
+## Requirements
+
+* Python 3.x
+* `numpy`
+* `opencv-python`
+* `pytesseract`
+* `python-telegram-bot`
+
+## Installation
+
+1. Clone the repository:
+
+    ```
+    git clone https://github.com/your-username/handwritten-digits-recognition-bot.git
+    cd handwritten-digits-recognition-bot
+    ```
+
+2. Install the required libraries:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+3. Rename `config.py.example` to `config.py` and update the values:
+
+    ```
+    cp config.py.example config.py
+    nano config.py
+    ```
+
+4. Start the bot:
+
+    ```
+    python bot.py
+    ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
