@@ -5,7 +5,7 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
 
 ## Example
 
-![Example image with handwritten digits and corresponding output](example.png)
+![Example image with handwritten digits and corresponding output](example1.jpg)
 
 
 
