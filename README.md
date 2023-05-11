@@ -23,17 +23,20 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
     pip install -r requirements.txt
     ```
 
-3. Insert telegram API key to `config.py`
+3. Download the pre-trained model by [link](https://drive.google.com/drive/folders/17ha83DuhPzufn5oN54mMY3WVq3UW3u47?usp=sharing) 
 
-
-4. Download the pre-trained model by [link](https://drive.google.com/drive/folders/17ha83DuhPzufn5oN54mMY3WVq3UW3u47?usp=sharing) 
 
 There are two pre-trained model: 
       
 * YOLOv8_l trained based on large model of YOLOv8l
       
 * YOLOv8_x trained based on large model of YOLOv8x
+
+4. Save the downloaded model to the `Model/'
    
+5. Insert telegram API key and path to downloaded model to `config.py`
+
+6. Run `main.py`
 
 ## Usage
 
