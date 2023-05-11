@@ -1,6 +1,9 @@
 config.py
+Model/
+Processed/
+Temp/
 *.pyc
-
+*.flake8
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

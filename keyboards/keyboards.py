@@ -1,6 +1,4 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-import base64
-
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def rate_kb(idx):

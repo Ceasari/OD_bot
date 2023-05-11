@@ -1,19 +1,22 @@
-from main import dp, bot
-from aiogram import types
-from keyboards.keyboards import rate_kb
-from aiogram.types import ContentType
+import glob
 import os.path
-from config import ALLOWED_FORMATS, MODEL_PATH
-import cv2
-from ultralytics import YOLO
 import random
 import string
-import glob
+
+import cv2
+from aiogram import types
+from aiogram.types import ContentType
+from ultralytics import YOLO
+
+from config import ALLOWED_FORMATS, MODEL_PATH
+from keyboards.keyboards import rate_kb
+from main import bot, dp
 
 model = YOLO(MODEL_PATH)
 
 os.makedirs("Temp", exist_ok=True)
 os.makedirs("Processed", exist_ok=True)
+
 
 def generate_random_idx(length=8):
     letters_and_digits = string.ascii_letters + string.digits
@@ -27,15 +30,14 @@ async def start_command(message: types.Message):
 
 @dp.message_handler(content_types=[ContentType.PHOTO, ContentType.DOCUMENT])
 async def handle_img_and_files(message: types.Message):
+    photo_id = generate_random_idx()
+    file_path = f"Temp/{photo_id}.jpg"
+    output_file_path = "Temp/"
     # Handle photos
     if message.photo:
         # get the last photo from the message
         photo = message.photo[-1]
-        photo_id = generate_random_idx()
-        print(photo_id)
         # download the file to a local directory
-        file_path = f"Temp/{photo_id}.jpg"
-        output_file_path = f"Temp/"
         try:
             await photo.download(file_path)
             results = model.predict(source=file_path, conf=0.3, imgsz=640)
@@ -48,17 +50,12 @@ async def handle_img_and_files(message: types.Message):
         except Exception as e:
             await message.answer(f"Error processing file: {e}")
 
-
     # Handle documents
     elif message.document and message.document.mime_type.split("/")[0] == "image" and \
             message.document.file_name.split(".")[-1] in ALLOWED_FORMATS:
         # get the last photo from the message
         photo = message.document
-        photo_id = generate_random_idx()
-        print(photo_id)
         # download the file to a local directory
-        file_path = f"Temp/{photo_id}.jpg"
-        output_file_path = f"Temp/"
         try:
             await photo.download(file_path)
             results = model.predict(source=file_path, conf=0.3, imgsz=640)
