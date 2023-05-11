@@ -1,3 +1,3 @@
-API_TOKEN = '5443199225:AAHscPjoPwX43_Lit7U9zvkSsZGiX7HNe5g'
+API_TOKEN = 'PUT YOUR API HERE'
 ALLOWED_FORMATS = ["jpeg", "jpg", "png", "gif"]
 MODEL_TYPE = "resnet"
