@@ -25,7 +25,7 @@ def generate_random_idx(length=8):
 
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
-    await message.answer("I am bot bla bla bla, waiting for photo  .... bla bla bla ")
+    await message.answer("Hi! Please send me a photo with numbers and I try to define it. ")
 
 
 @dp.message_handler(content_types=[ContentType.PHOTO, ContentType.DOCUMENT])
