@@ -23,7 +23,7 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
     pip install -r requirements.txt
     ```
 
-3. Download the pre-trained model [link](https://drive.google.com/drive/folders/17ha83DuhPzufn5oN54mMY3WVq3UW3u47?usp=sharing) 
+3. Download the pre-trained model [link](https://drive.google.com/drive/folders/17ha83DuhPzufn5oN54mMY3WVq3UW3u47?usp=sharing) or you can train your own [link](https://github.com/Ceasari/digits_recognition/)
 
 
     There are three pre-trained models: 
