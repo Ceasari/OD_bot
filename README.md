@@ -35,7 +35,7 @@ This is a Telegram bot that recognizes handwritten digits from an image sent to 
       
     * YOLOv8_x trained based on extra large model of YOLOv8x
 
-4. Save the downloaded model to the [Model](Model)
+4. Save the downloaded model to the [Model folder](Model)
    
 5. Insert telegram API key and path to downloaded model to `config.py`
 
