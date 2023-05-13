@@ -1,7 +1,7 @@
 # Handwritten Digits Recognition Telegram Bot
 
 This is a Telegram bot that recognizes handwritten digits from an image sent to it and returns the original image with bounding boxes and labels around each detected digit.
-
+[colab notebook]https://colab.research.google.com/drive/10IZhA6NowPVrabE8AsJqztSU-ly8Pdy4?usp=sharing
 
 ## Example
 
